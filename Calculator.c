@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 void sum(int x, int y);
+void sub(int,int);
 int main()
 {
 	int check;
@@ -17,6 +18,8 @@ int main()
 			case '+':
 				sum(a,b);
 				break;
+			case '-':
+				sub(a,b);
 			default:
 				printf("Wrong Entry\n");
 		}
@@ -33,4 +36,11 @@ void sum(int x, int y)
 	printf("SUM = %d\n",sum);
 	return;
 }
+void sub(int x, int y)
+{
+	int sum=x-y;
+	printf("DIFFERENCE = %d\n",sum);
+	return;
+}
+
 
